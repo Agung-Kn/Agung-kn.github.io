@@ -1,19 +1,16 @@
 AOS.init();
 
 window.addEventListener('DOMContentLoaded', (event) => {
-	var navbarShrink = function () {
+	let navbarShrink = function () {
 		const navbarCollapsible = document.body.querySelector('#mainNav');
-		const navbarBackground = document.body.querySelector('.navbar');
 
 		if (!navbarCollapsible) {
 			return;
 		}
 		if (window.scrollY === 0) {
 			navbarCollapsible.classList.remove('navbar-shrink');
-			navbarBackground.classList.remove('bg-primary');
 		} else {
 			navbarCollapsible.classList.add('navbar-shrink');
-			navbarBackground.classList.add('bg-primary');
 		}
 	};
 
