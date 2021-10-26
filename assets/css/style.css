@@ -3,7 +3,7 @@
 	background-color: #f8f9fa;
 }
 
-#projects {
+#portfolio {
 	padding: 96px 0;
 	background-color: #ececec;
 }
@@ -209,7 +209,14 @@ hr {
 		margin-top: -16;
 	}
 
-	.custom-footer {
-		justify-content: center;
+	#contact .row {
+		text-align: center;
+		flex-direction: column-reverse;
+	}
+
+	#contact form {
+		margin-top: 30px;
+		text-align: center;
+		display: inline-block;
 	}
 }
