@@ -1,0 +1,203 @@
+#about {
+	padding: 96px 0;
+	background-color: #f8f9fa;
+	text-align: center;
+}
+
+#projects {
+	padding: 96px 0;
+	background-color: #ececec;
+}
+
+#contact {
+	padding: 96px 0;
+	background-color: #f8f9fa;
+}
+
+footer {
+	background-color: #ececec;
+}
+
+footer a {
+	color: #000;
+	display: inline-block;
+	margin-left: 10px;
+	text-decoration: none;
+}
+
+.navbar {
+	padding: 10px 0;
+	background-color: transparent;
+}
+
+.nav-link {
+	margin-left: 10px;
+}
+
+.jumbotron {
+	height: 657px;
+	padding: 48px;
+	background: linear-gradient(to bottom, rgb(0, 0, 0, 0.7) 0%, rgb(0, 0, 0, 0.7) 100%), url('../img/cover.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.jumbotron-content {
+	color: #fff;
+	text-align: center;
+	margin-top: 160px;
+}
+
+.jumbotron-content h1 {
+	position: relative;
+	margin-top: -16px;
+	opacity: 0;
+	animation: text1 1s 1s forwards;
+}
+
+.jumbotron-content h2 {
+	position: relative;
+	opacity: 0;
+	animation: text2 1.5s 1s forwards;
+}
+
+.profile {
+	height: 350px;
+	width: 300px;
+}
+
+.card {
+	border-radius: 8px;
+	height: 335px;
+}
+
+.card-head {
+	padding: 16px;
+}
+
+.card-head img {
+	border-radius: 10px;
+}
+
+.card-body {
+	margin-top: -16px;
+}
+
+.social-media {
+	margin-top: -10px;
+	font-size: 30px;
+}
+
+hr {
+	margin: auto;
+	animation: line 2s forwards;
+}
+
+#mainNav {
+	transition: 0.2s ease;
+}
+
+#mainNav.navbar-shrink {
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes line {
+	from {
+		width: 10%;
+	}
+
+	to {
+		width: 100%;
+	}
+}
+
+@keyframes text1 {
+	0% {
+		bottom: -80px;
+		opacity: 0;
+	}
+
+	20% {
+		bottom: -64px;
+		opacity: 0;
+	}
+
+	30% {
+		bottom: -48px;
+		opacity: 0;
+	}
+
+	60% {
+		bottom: -32px;
+		opacity: 0;
+	}
+
+	80% {
+		bottom: -16px;
+		opacity: 0;
+	}
+
+	100% {
+		bottom: 0;
+		opacity: 1;
+	}
+}
+
+@keyframes text2 {
+	0% {
+		top: -80px;
+		opacity: 0;
+	}
+
+	20% {
+		top: -64px;
+		opacity: 0;
+	}
+
+	30% {
+		top: -48px;
+		opacity: 0;
+	}
+
+	60% {
+		top: -32px;
+		opacity: 0;
+	}
+
+	80% {
+		top: -16px;
+		opacity: 0;
+	}
+
+	100% {
+		top: 0;
+		opacity: 1;
+	}
+}
+
+@media (max-width: 991.98px) {
+	.navbar {
+		background-color: #0d6efd;
+	}
+
+	.jumbotron {
+		margin-top: 3.7rem;
+	}
+
+	.jumbotron-content {
+		margin-top: 5rem;
+	}
+
+	.profile {
+		height: 290px;
+		width: 250px;
+	}
+
+	.card {
+		height: unset;
+	}
+
+	.card-body {
+		margin-top: -16;
+	}
+}
