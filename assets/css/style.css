@@ -83,8 +83,17 @@ footer a {
 }
 
 .social-media {
+	text-align: center;
 	margin-top: -10px;
 	font-size: 30px;
+}
+
+.copyright {
+	text-align: left;
+}
+
+.links {
+	text-align: right;
 }
 
 hr {
@@ -215,8 +224,20 @@ hr {
 	}
 
 	#contact form {
+		width: 300px;
 		margin-top: 30px;
 		text-align: center;
 		display: inline-block;
+	}
+
+	footer .row {
+		flex-direction: column-reverse;
+	}
+
+	.copyright,
+	.social-media,
+	.links {
+		margin: 5px 0;
+		text-align: center;
 	}
 }
