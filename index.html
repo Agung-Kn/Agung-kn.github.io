@@ -11,7 +11,7 @@
 		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 		<link rel="stylesheet" href="assets/css/style.css" />
 
-		<title>Portfolio | Agung Kn</title>
+		<title>Agung Kn</title>
 	</head>
 	<body id="home">
 		<nav class="navbar navbar-expand-lg navbar-dark fixed-top fw-bold" id="mainNav">
@@ -35,11 +35,20 @@
 		<section class="jumbotron">
 			<div class="container">
 				<div class="jumbotron-content">
-					<p class="lead">Hi, I am</p>
-					<h1 class="display-4 fw-bold">Agung Kurniawan</h1>
-					<hr class="my-4" />
-					<h2>Web Developer | UI/UX Designer | Content Creator</h2>
-					<a class="btn btn-primary btn-lg mt-5" href="#about" role="button">About me</a>
+					<div class="row">
+						<p class="lead">Hi, I am</p>
+						<h1 class="display-4 fw-bold">Agung Kurniawan</h1>
+						<hr class="jumbotron-line my-4" />
+						<h2>Web Developer | UI/UX Designer | Content Creator</h2>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col text-end">
+							<a class="btn primary-btn btn-lg mt-5" href="#about" role="button">About Me</a>
+						</div>
+						<div class="col text-start">
+							<a class="btn primary-btn btn-lg mt-5" href="#about" role="button">Download CV</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -60,40 +69,37 @@
 
 		<section id="portfolio">
 			<div class="container">
-				<h2 class="fw-bold text-center">Portfolio</h2>
-				<div class="row mt-4">
-					<div class="col-md-4">
-						<a href="project-1.html" class="project-1">
-							<div class="card mt-3">
-								<div class="card-head">
-									<img src="assets/img/project-1.png" class="card-img-top" />
-								</div>
-								<div class="card-body">
-									<h5 class="card-title">Data Mining : Algoritma Naive Bayes</h5>
-									<p class="card-text">Program untuk menentukan tingkan pencemaran polusi udara di Jakarta menggunakan metode Naive Bayes Classification.</p>
-								</div>
-							</div>
-						</a>
-					</div>
+				<h2 class="fw-bold text-start">Portfolio</h2>
+				<hr class="line-heading" />
+				<a href="#" class="view btn secondary-btn">See all</a>
+				<div class="row mt-2">
 					<div class="col-md-4">
 						<div class="card mt-3">
 							<div class="card-head">
-								<img src="https://dummyimage.com/318x180/757175/fff.png" class="card-img-top" alt="..." />
+								<a href="project-1.html"><img src="assets/img/project-1.png" class="card-img-top" /></a>
 							</div>
 							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+								<h6 class="card-title"><a href="project-1.html">Data Mining : Algoritma Naive Bayes</a></h6>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-4">
 						<div class="card mt-3">
 							<div class="card-head">
-								<img src="https://dummyimage.com/318x180/757175/fff.png" class="card-img-top" alt="..." />
+								<img src="assets/img/project-2.png" class="card-img-top" />
 							</div>
 							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+								<h6 class="card-title">Web App : Metrodata Academy</h6>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card mt-3">
+							<div class="card-head">
+								<img src="https://dummyimage.com/318x180/757175/fff.png" class="card-img-top" />
+							</div>
+							<div class="card-body">
+								<h6 class="card-title">Web App : Sistem Absensi Sekolah</h6>
 							</div>
 						</div>
 					</div>
@@ -124,8 +130,8 @@
 									</div>
 									<div class="mb-3">
 										<div class="d-grid gap-2 d-md-flex justify-content-md-end">
-											<button type="submit" class="btn btn-primary btn-send">Send</button>
-											<button type="button" class="btn btn-primary btn-loading d-none" disabled>
+											<button type="submit" class="btn secondary-btn btn-send">Send</button>
+											<button type="button" class="btn secondary-btn btn-loading d-none" disabled>
 												<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
 												Loading...
 											</button>
