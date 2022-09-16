@@ -74,13 +74,14 @@ footer a {
 }
 
 #portfolio h2 {
+	text-align: left;
 	display: inline-block;
 }
 
 #about h2 {
 	padding-bottom: 10px;
 	margin-bottom: 25px;
-	border-bottom: 5px solid #292c36;
+	border-bottom: 4px solid #565860;
 }
 
 #about p,
@@ -207,8 +208,19 @@ footer a {
 	background-color: #2c5bff;
 }
 
+.about-btn {
+	text-align: right;
+}
+
+.cv-btn {
+	text-align: left;
+}
+
 #about img {
 	background-color: #292c36;
+	height: 248px;
+	width: 198px;
+	margin-top: 24px;
 	border: 1px solid #000;
 	box-shadow: 25px -25px 0px 0px #2c5bff;
 }
@@ -304,7 +316,7 @@ input[type='email']:focus,
 
 @media (max-width: 991.98px) {
 	.navbar {
-		background-color: #0d6efd;
+		background-color: #292c36;
 	}
 
 	.jumbotron {
@@ -324,17 +336,41 @@ input[type='email']:focus,
 		font-size: 20px;
 	}
 
+	.jumbotron-content .cta-button {
+		margin: auto;
+		flex-direction: column;
+	}
+
+	.about-btn,
+	.cv-btn {
+		text-align: center;
+		margin-bottom: -30px;
+	}
+
+	#about {
+		padding: 50px 0 50px;
+	}
+
 	.profile {
 		height: 290px;
 		width: 250px;
 	}
 
-	.card {
-		height: unset;
+	#portfolio h2 {
+		text-align: center;
 	}
 
-	.card-body {
-		margin-top: -16;
+	#portfolio .view {
+		display: none;
+	}
+
+	.container .line-heading {
+		margin: auto;
+	}
+
+	.card {
+		margin: auto;
+		width: 355px;
 	}
 
 	#contact .row {
