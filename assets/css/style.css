@@ -20,6 +20,11 @@ body {
 	background-color: #1f212c;
 }
 
+#skills {
+	padding: 50px 0;
+	background-color: #1f212c;
+}
+
 footer {
 	background-color: #1f212c;
 }
@@ -91,12 +96,33 @@ footer a {
 	line-height: 28px;
 }
 
-.line-heading {
+#skills h2 {
+	display: inline-block;
+	text-align: center;
+}
+
+#skills img {
+	filter: grayscale(100%);
+	max-height: 200px;
+	max-width: 100px;
+}
+
+#skills img:hover {
+	filter: grayscale(0);
+}
+
+#portfolio .line-heading {
 	display: inline-block;
 	width: 78%;
-	margin-left: 5px;
-	margin-bottom: 5px;
 	margin: 0 5px 5px 5px;
+	border: 2px solid #fff;
+	border-radius: 5px;
+}
+
+#skills .line-heading {
+	display: inline-block;
+	width: 44%;
+	margin: 0 5px 8px 5px;
 	border: 2px solid #fff;
 	border-radius: 5px;
 }
@@ -105,6 +131,7 @@ footer a {
 	border-radius: 0;
 	padding: 0;
 	background-color: #292c36;
+	/* box-shadow: 0px 5px 5px 0px #000; */
 }
 
 .card-head img {
@@ -214,6 +241,14 @@ footer a {
 
 .cv-btn {
 	text-align: left;
+}
+
+.sub-heading {
+	text-align: center;
+}
+
+#portfolio .sub-heading {
+	margin-left: -10px;
 }
 
 #about img {
