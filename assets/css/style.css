@@ -10,6 +10,7 @@ body {
 	background-color: #1f212c;
 }
 
+#main-portfolio,
 #portfolio {
 	padding: 96px 0 50px;
 	background-color: #1f212c;
@@ -96,7 +97,8 @@ footer a {
 	line-height: 28px;
 }
 
-#skills h2 {
+#skills h2,
+#main-portfolio h2 {
 	display: inline-block;
 	text-align: center;
 }
@@ -119,12 +121,17 @@ footer a {
 	border-radius: 5px;
 }
 
-#skills .line-heading {
+#skills .line-heading,
+#main-portfolio .line-heading {
 	display: inline-block;
 	width: 44%;
 	margin: 0 5px 8px 5px;
 	border: 2px solid #fff;
 	border-radius: 5px;
+}
+
+#main-portfolio .line-heading {
+	width: 40%;
 }
 
 .card {
